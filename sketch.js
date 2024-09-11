@@ -9,6 +9,10 @@ function setup() {
 
 function draw() {
   background(0);
+
+  fill(255);
+  textAlign(CENTER);
+  text('haga click y mueva el mouse', windowWidth/2, windowHeight/2);
   let mouseSpeed = abs((mouseX - pmouseX)+(mouseY - pmouseY));//hago una suma de la velocidad del mouse en ambos ejes
   if (mouseSpeed>1){//si el mouse se mueve defino la velocidad de reproduccion en 1
     video.speed(1);
@@ -23,7 +27,7 @@ function draw() {
 
 function mousePressed() {
 
-    video.loop();  // Reproducir el video en bucle
+    video.loop();  // Reproducir el video en bucle // comentar para sacarlo
     //fullscreen(true);  // Hacer pantalla completa
   
 }
