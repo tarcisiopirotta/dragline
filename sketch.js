@@ -3,7 +3,10 @@
 let video;
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  video = createVideo(['/data/video.mp4']);  // Asegúrate de que el archivo de video está en la misma carpeta o proporciona la URL correcta
+  //para verlo offline en el visual code, usar la siguiente linea:
+  //video = createVideo(['data/video.mp4']);  // Asegúrate de que el archivo de video está en la misma carpeta o proporciona la URL correcta
+  //cuando lo hayan subido la linea de abajo reemplazar el dominio por el de ustedes por ejmplo https://poppylipops.github.io/dragline/data/video.mp4
+  video = createVideo(['https://tarcisiopirotta.github.io/dragline/data/video.mp4']);  // Asegúrate de que el archivo de video está en la misma carpeta o proporciona la URL correcta
   video.hide(); // Oculta el elemento de video HTML
 }
 
